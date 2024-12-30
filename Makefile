@@ -1,5 +1,5 @@
 SRC = pointer.c
-OBJS = $(SRC:.c = .o)
+OBJS = $(SRC:.c=.o)
 CC = gcc
 CFLAGS = -Wextra -Wall -Werror
 TARGETNAME = pointer
