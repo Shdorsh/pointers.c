@@ -6,7 +6,7 @@
 /*   By: abredimu <abredimu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 07:42:41 by abredimu          #+#    #+#             */
-/*   Updated: 2024/12/27 09:05:12 by abredimu         ###   ########.fr       */
+/*   Updated: 2024/12/30 11:02:46 by abredimu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,12 @@ typedef union pointer
 	long		*lp;
 	uintptr_t	uip;
 	long		l;
-}	pointer;
+}	t_pointer;
 
-pointer	num_create_pointer(long l);
-pointer	ref_create_pointer(void *vp);
-int		compare_pointer_values(pointer a, pointer b);
-pointer	stack_search(pointer ptr, pointer value, int similitude);
-pointer	stack_down(pointer ptr, int amount);
+t_pointer	num_create_pointer(long l);
+t_pointer	ref_create_pointer(void *vp);
+int			compare_pointer_values(t_pointer a, t_pointer b);
+t_pointer	stack_search(t_pointer ptr, t_pointer value, int similitude);
+t_pointer	stack_down(t_pointer ptr, int amount);
 
 #endif
